@@ -17,12 +17,6 @@ class Browser:
         Browser.driver = WebDriverManager.new_driver()
         logger.info('Got driver')
 
-
-    @staticmethod ##?????
-    def get_page():
-        Browser.driver.get(BASE_URL)
-        logger.info('Page opened')
-
     @staticmethod
     def refresh_page():
         Browser.driver.navigate().refresh()
